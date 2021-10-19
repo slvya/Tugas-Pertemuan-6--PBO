@@ -1,0 +1,384 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	 
+    <title>HALAMAN UTAMA</title>
+	<style>
+      body{
+    margin: 0;
+    padding: 0;
+    background-color: #b7e3f0;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+
+  
+  .navbar{
+    background-color: transparent !important;
+    padding: 2px 0px;
+  }
+ .navbar ul li a{
+    color :black !important;
+    font-size: 16px;
+    font-style: italic;
+    padding: 2px;
+
+  }
+ 
+  .navbar ul li a.active,nav ul li a:hover{
+    background:#2d9ed2;
+    transition: .5s;
+    border-radius: 4px;
+  }
+
+  .vid-bg{
+    position: absolute;
+    right:0;
+    bottom:0;
+    min-width:100%;
+    min-height: 100%;
+  } 
+ 
+  .banner-text{
+    position:absolute;
+    top:35%;
+    text-align: center;
+    left:25%
+  }
+
+  .banner-text h2{
+    color:white;
+    font-size: 60px;
+    margin:0;
+    font-style: oblique;
+    font-weight: bold;
+
+  }
+  .banner-text h2 span{
+    color:#ff7b00;
+    font-style: oblique;
+    font-weight: bold;
+  }
+
+  .banner-text p{
+    color:black;
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+
+  }
+  .btnn{
+    display: inline-block;
+    margin-top: 5%;
+    background-color: transparent;
+    border:0;
+    font-size: 25px;
+    text-transform: uppercase;
+    border: 5px solid #ff7b00;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: black;
+    font-family:cursive;
+  }
+
+  .btn a{
+    text-align: center;
+  }
+  .card-header{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: cursive;
+    color: #4b8da3;
+  }
+
+  .card-body p {
+    text-align: left;
+    font-size: 14px;
+    font-family:monospace;
+    color: black;
+    margin: 5px;
+
+  }
+
+  h4{
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+    background-color: #2d9ed2;
+    border-radius: 3px;
+    width: 50%;
+    display: inline-block;
+     
+  }
+  .judul{
+    text-align: center;
+
+  }
+    
+  </style>
+
+  </head>
+  <body>
+    <section id="HOME">
+      
+      </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{% static "image/logo.png" %} " alt="" width="300" height="150 ">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav  ">
+              <li class="nav-item  ">
+                <a class="nav-link active" aria-current="page" href="#HOME">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#SCROOL1">IKAN AIR LAUT </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#SCROOL2">IKAN AIR TAWAR </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#SCROOL3">IKAN HIAS </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/tips">TIPS </a>
+              </li>
+            </ul>
+          </div>
+        
+      </nav>
+      
+      <video src="{% static "image/videoo.mp4" %} " class="vid-bg" autoplay loop muted></video>
+      <div class="banner-text">
+          <h2>Welcome To <span>Fish World</span></h2>
+          <p> Lets Explore the world of Fish with Us </p>
+          <button class="btnn"> Let's Go </button>
+      </div>
+      <br><br><Br><br><br><br><Br><br><br><br><Br><br><br><br><Br><br><br><br><Br><br><br><br><Br><br><br><br><Br><br> 
+        
+
+          <div class="container">
+             
+            <div class="row">
+              <div class="col">
+                <div class="card text-dark bg-light mb-3" style="max-width: 21rem;">
+                  <div class="card-header">Definisi</div>
+                  <img src="{% static "image/1.jpg" %}"  width="320" height="210" alt="">
+                  <div class="card-body">
+                    <p class="card-text"> Ikan adalah anggota vertebrata poikilotermik (berdarah dingin) yang hidup di air dan bernapas dengan insang. Ikan merupakan kelompok vertebrata yang paling beraneka ragam dengan jumlah spesies lebih dari 27,000 di seluruh dunia.</p>
+                    <br>
+                    <br>
+                    <a href="#" class="btn btn-primary " >Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-dark bg-light mb-3" style="max-width: 21rem;">
+                  <div class="card-header">Ciri- Ciri </div>
+                  <img src="{% static "image/2.jpg" %} " width="320" height="210"  alt="">
+                  <div class="card-body">
+                    <p class="card-text">1. Termasuk hewan akuatik karena hidup di air<br>
+                      2. Menggunakan insang sebagai alat pernafasan, tetapi kadang ada pul yang menggunakan gelembung sebagai alat bantu pernafasan<br>
+                      3. Menggunakan sirip sebagai alat gerak.</p>
+                      <br>
+                      <a href="#" class="btn btn-primary">Read More</a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-dark bg-light mb-3" style="max-width: 21rem;">
+                  <div class="card-header">Klasifikasi </div>
+                  <img src="{% static "image/3.jpg" %} " width="320" height="210" alt="">
+                  <div class="card-body">
+                    <p class="card-text">Secara taksonomi, ikan tergolong kelompok paraphyletic yang dibagi menjadi ikan tanpa rahang (kelas Agnatha, 75 spesies termasuk lamprey dan ikan hag), ikan bertulang rawan (kelas Chondrichthyes, 800 spesies termasuk hiu dan pari), dan sisanya tergolong ikan bertulang keras (kelas Osteichthyes).</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <br>
+          <br>
+
+          <!--IKAN AIR LAUT -->
+          
+      <div class="container">
+      <hr>
+      <section id="SCROOL1">
+        <div class="judul">
+          <h4 > IKAN AIR LAUT </h4>
+        </div>
+      <br>
+        <div class="row">
+          <div class="col">
+            <div class="card text-dark bg-light mb-3" style="max-width: 25rem;">
+              <div class="card-header"> Ikan Tongkol </div>
+              <img src="{% static "image/ikan-Tongkol.jpg" %} " alt="">
+              <div class="card-body">
+                <p class="card-text">Ikan tongkol mudah diperoleh karena ikan tersebut menyebar di seluruh pantai Indonesia. Ikan tongkol berasal dari jenis ikan scombried (ikan pelagis) yang hidup membentuk gerombolan.ikan tongkol mempunyai nama latin yaitu Euthynnus affinis ikan ini banyak ditemukan di perairan samudera pasifik.</p>
+                
+                <a href="#" class="btn btn-primary " >Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-dark bg-light mb-3" style="max-width: 25rem;">
+              <div class="card-header">Ikan Cakalang </div>
+              <img src="{% static "image/ikan-cakalang.jpg" %}"  width="350" height="230"alt="">
+              <div class="card-body">
+                <p class="card-text"> Ikan Cakalang memiliki warna lebih terang dibanding tongkol, sehingga sering disebut “tongkol putih”. Perbedaan utamanya terletak pada bentukan badannya yang lebih gemuk dibanding tongkol.Warnanya biru keunguan hingga gelap.  </p> 
+                <br>
+                  <a href="#" class="btn btn-primary">Read More</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-dark bg-light mb-3" style="max-width: 25rem;">
+              <div class="card-header"> Ikan Tuna  </div>
+              <img src="{% static "image/ikan-Tuna.jpg" %}" width="350" height="230" alt="">
+              <div class="card-body">
+                <p class="card-text"> Ikan Tuna dikenal memiliki nilai komersial tinggi karena berukuran besar. Tuna dewasa beratnya mulai 35 hingga 350 kilogram. Daging tuna biasanya berwarna merah muda ke merah.Tuna segar selain untuk sushi dan sashimi, juga sering diolah dengan bumbu balado, kuah kuning.</p>
+                <br>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--IKAN AIR TAWAR -->
+      <div class="container">
+        <hr>
+          <section id="SCROOL2">
+            <div class="judul">
+              <h4 > IKAN AIR TAWAR </h4>
+            </div>
+        <br>
+          <div class="row">
+            <div class="col">
+              <div class="card text-dark bg-light mb-3" style="max-width: 25rem;">
+                <div class="card-header"> Ikan Kakap Merah  </div>
+                <img src="{% static "image/ikan-Kakap.jpg" %}" width="350" height="230" alt="">
+                <div class="card-body">
+                  <p class="card-text">Terdapat dua jenis ikan kakap, kakap merah (Red Snapper) dan kakap putih (White Seabass). Sekalipun sama-sama bernama kakap, kedua ikan ini berasal dari suku ikan yang berbeda.Cita rasa ikan kakap merah juga lebih kuat dibanding kakap putih.  </p>
+                  <br> 
+                  <a href="#" class="btn btn-primary " >Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-dark bg-light mb-3" style="max-width: 25rem;">
+                <div class="card-header">Ikan Mujair  </div>
+                <img src="{% static "image/ikan-mujair.jpg" %}" width="350" height="230" alt="">
+                <div class="card-body">
+                  <p class="card-text"> Bentuk ikan mujair terlihat sederhana, pipih, hitam keabu-abuan, dengan panjang maksimum 40 cm. Namun, daging ikan mujair sangat gurih untuk dimasak. Durinya juga tidak terlalu banyak.Ikan air tawar ini terkenal dengan gizinya, terutama karena kaya fosfor. </p> 
+                  <br>
+                    <a href="#" class="btn btn-primary">Read More</a>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-dark bg-light mb-3" style="max-width: 25rem;">
+                <div class="card-header"> Ikan Gurame  </div>
+                <img src="{% static "image/ikan-gurame.jpg" %}" width="350" height="230" alt="">
+                <div class="card-body">
+                  <p class="card-text">Ciri fisik ikan gurame adalah bentuknya yang pipih melebar, sisik yang besar dan rapat, serta berwarna cokelat muda. Ikan gurame memiliki daging sangat padat. Durinya berukuran besar dan hanya terdapat di tengah badannya, sehingga mudah untuk memilahnya.</p>
+                  <br>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+
+        <!--IKAN HIAS-->
+        <div class="container">
+          <hr>
+            <section id="SCROOL3">
+              <div class="judul">
+                <h4 > IKAN HIAS</h4>
+              </div>
+          <br>
+            <div class="row">
+              <div class="col">
+                <div class="card text-dark bg-light mb-3" style="max-width: 25rem;">
+                  <div class="card-header"> Ikan Cupang </div>
+                  <img src="{% static "image/1.-ikan-Cupang.jpg" %}" width="350" height="230" alt="">
+                  <div class="card-body">
+                    <p class="card-text">Ikan cupang merupakan ikan hias yang sangat populer. Paduan warna yang cerah serta ekor yang lebar membuat semua orang tertarik dengan kecantikannya. Ikan yang satu ini akan cocok jika kamu memiliki aquarium berukuran kecil karena ikan cupang tidak bisa digabungkan dengan sembarangan ikan lain.Ikan yang bisa gabungkan dengan ikan cupang adalah ikan neon tetra dan catfish. </p>
+                    <a href="#" class="btn btn-primary " >Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-dark bg-light mb-3" style="max-width: 25rem;">
+                  <div class="card-header">Ikan Guppy  </div>
+                  <img src="{% static "image/2.-ikan-Guppy.jpg" %}" width="350" height="230" alt="">
+                  <div class="card-body">
+                    <p class="card-text"> ikan guppy memiliki tubuh yang mungil dan ekor yang menjuntai. Mudah untuk dirawat, ikan guppy merupakan ikan hias aquarium tanpa oksigen.Jenis ikan hias aquarium yang satu ini merupakan ikan hias air tawar yang memiliki banyak jenis dengan corak dan warna yang beragam. Bahkan beberapa jenis ikan guppy memiliki harga yang mahal dan diburu oleh kolektor. </p> 
+                    <br>
+                      <a href="#" class="btn btn-primary">Read More</a>
+    
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-dark bg-light mb-3" style="max-width: 25rem;">
+                  <div class="card-header"> Ikan CrownFish  </div>
+                  <img src="{% static "image/nemo.jpg" %}" width="350" height="230" alt="">
+                  <div class="card-body">
+                    <p class="card-text">Tubuh ikan hias Nemo ini didominasi oleh warna oranye, kemudian dipadukan dengan garis berbentuk belang dan berwarna putih. Hampir semua orang tahu jenis ikan hias Nemo ini, karena pernah menonton film Finding Nemo. Ikan ini pun menjadi semakin dikenal. Sebutan lainnya untuk Nemo ini adalah ikan Clownfish.</p>
+                    <br><bR>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+
+          
+            
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="{% static "js/scrolling.js" %}" type="text/javascript"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    --> 
+    
+  </body>
+</html>
+
+
+
+
+
+
+
